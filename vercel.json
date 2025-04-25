@@ -1,0 +1,59 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "infinite-whiteboard/python/ai_backend.py",
+            "use": "@vercel/python"
+        },
+        {
+            "src": "infinite-whiteboard/index.html",
+            "use": "@vercel/static"
+        },
+        {
+            "src": "infinite-whiteboard/css/styles.css",
+            "use": "@vercel/static"
+        },
+        {
+            "src": "infinite-whiteboard/css/material-design.css",
+            "use": "@vercel/static"
+        },
+        {
+            "src": "infinite-whiteboard/js/app.js",
+            "use": "@vercel/static"
+        },
+        {
+            "src": "infinite-whiteboard/js/whiteboard.js",
+            "use": "@vercel/static"
+        },
+        {
+            "src": "infinite-whiteboard/js/tools.js",
+            "use": "@vercel/static"
+        },
+        {
+            "src": "infinite-whiteboard/js/ai-assistant.js",
+            "use": "@vercel/static"
+        },
+        {
+            "src": "infinite-whiteboard/js/utils.js",
+            "use": "@vercel/static"
+        },
+        {
+            "src": "infinite-whiteboard/assets/themes/light.css",
+            "use": "@vercel/static"
+        },
+        {
+            "src": "infinite-whiteboard/assets/themes/dark.css",
+            "use": "@vercel/static"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/api/ai",
+            "dest": "infinite-whiteboard/python/ai_backend.py"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "infinite-whiteboard/index.html"
+        }
+    ]
+}

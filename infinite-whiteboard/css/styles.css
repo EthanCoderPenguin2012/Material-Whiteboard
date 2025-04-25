@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #6200ea;
+    color: white;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.whiteboard {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 64px);
+    background-color: white;
+    overflow: hidden;
+    border: 1px solid #ccc;
+}
+
+.toolbar {
+    display: flex;
+    padding: 8px;
+    background-color: #e0e0e0;
+}
+
+.toolbar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 8px;
+    padding: 8px;
+    transition: background-color 0.3s;
+}
+
+.toolbar button:hover {
+    background-color: #d1c4e9;
+}
+
+.tool-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.text-box {
+    position: absolute;
+    border: 1px dashed #6200ea;
+    padding: 4px;
+    background-color: rgba(255, 255, 255, 0.8);
+    resize: both;
+    overflow: auto;
+}
+
+.image-upload {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.ai-assistant {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    background-color: #6200ea;
+    color: white;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.ai-assistant input {
+    width: 200px;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+}
+
+.ai-assistant button {
+    background-color: #03dac5;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.ai-assistant button:hover {
+    background-color: #018786;
+}
+
+.theme-switcher {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.theme-switcher select {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}

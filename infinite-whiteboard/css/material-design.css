@@ -1,0 +1,96 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header {
+    background-color: #6200ea;
+    color: white;
+    padding: 16px;
+    text-align: center;
+}
+
+.whiteboard {
+    flex: 1;
+    background-color: white;
+    border: 1px solid #ccc;
+    position: relative;
+    overflow: hidden;
+}
+
+.toolbar {
+    display: flex;
+    justify-content: space-around;
+    padding: 8px;
+    background-color: #e0e0e0;
+}
+
+.tool-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.tool-button:hover {
+    background-color: #d1c4e9;
+}
+
+.theme-switcher {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.text-box {
+    position: absolute;
+    border: 1px solid #6200ea;
+    padding: 4px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.image-upload {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.ai-assistant {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    background-color: #6200ea;
+    color: white;
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.ai-assistant:hover {
+    background-color: #3700b3;
+}
